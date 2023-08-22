@@ -1,0 +1,1 @@
+export const styles = "text-black border border-gray-300 px-4 py-2 rounded-md focus:outline-none focus:border-blue-500 pr-10 "

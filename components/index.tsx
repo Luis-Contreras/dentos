@@ -1,7 +1,8 @@
-import { Body } from "./body";
-import { Button } from "./button";
-import { Footer } from "./footer";
-import { Header } from "./header";
-import { Input } from "./input";
+import Input from "./input";
+import Container from "./container";
+import Card from "./card";
+import Error from "./error";
+import Loading from "./loading";
+import Pagination from "./pagination";
 
-export { Body, Button, Footer, Header, Input };
+export { Input, Container, Card, Error, Loading, Pagination };

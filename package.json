@@ -8,8 +8,10 @@
     "type-check": "tsc"
   },
   "dependencies": {
-    "@heroicons/react": "^2.0.18",
+    "@apollo/client": "^3.8.1",
+    "@heroicons/react": "^1.0.6",
     "autoprefixer": "^10.4.15",
+    "graphql": "^16.8.0",
     "next": "latest",
     "next-themes": "^0.2.1",
     "postcss": "^8.4.28",

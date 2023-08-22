@@ -1,10 +1,27 @@
-import React from "react";
-import { Layout } from "../modules";
+import React, { useState } from "react";
+import { ApolloProvider } from "@apollo/client";
+import { Layout, Header, Body } from "../modules";
+import { Container } from "../components";
 import "../global.css";
-import { Header } from "../components";
+import { SearchTypes } from "../types/search.types";
+import client from "../apolloClient";
 
 const App = () => {
-  return <Layout header={<Header />}></Layout>;
+  const [search, setSearch] = useState<SearchTypes>();
+
+  const handleInputChange = (e) => {
+    setSearch(e.target.value);
+  };
+
+  return (
+    <ApolloProvider client={client}>
+      <Container>
+        <Layout
+          header={<Header search={handleInputChange} searchValue={search} />}
+          body={<Body searchValue={search} />}></Layout>
+      </Container>
+    </ApolloProvider>
+  );
 };
 
 export default App;
