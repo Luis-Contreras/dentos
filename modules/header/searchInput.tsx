@@ -6,7 +6,7 @@ export const SearchInput: FC<SearchTypes> = ({ search, searchValue }) => {
   return (
     <div className="flex justify-between items-center">
       Buscar:
-      <div className="p-2">
+      <div style={{ padding: "4px" }}>
         <Input onChange={(e) => search(e)} value={searchValue} />
       </div>
     </div>
